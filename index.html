@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="www.cke-kyc.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="www.cke-kyc.com" content="ie=edge">
+    <title>e-KYC Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .container {
+            width: 50%;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 30px;
+            border-radius: 8px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        label {
+            font-size: 14px;
+            color: #555;
+        }
+
+        input[type="text"], input[type="email"], input[type="file"], input[type="date"], select {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 12px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>e-KYC Registration</h1>
+	<h2>C.K.Prajapati Vidhyalay:-2</h2>
+    <p>Submit your details for identity verification</p>
+</header>
+
+<div class="container">
+    <h2>Fill in the Details</h2>
+    <form action="/submit_kyc" method="POST" enctype="multipart/form-data">
+        
+        <!-- Full Name -->
+        <div class="form-group">
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" required>
+        </div>
+		<!-- Stander -->
+		<div class="form-group">
+		     <label for="Stander">Stander:    </label>
+			 <input type="number" id="rollnumber" name="rollnumber" required>
+		</div>
+		<!-- Roll number-->
+		<div class="form-group">
+		<label for="Roll Number">Roll Number:  </label>
+			 <input type="Number" id="Number" name="Number" required>
+		</div>
+		<!-- divsion -->
+		<div class="from-group">
+		<select id="divsion" name="divsion" required>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+            </select>
+		<!--label for="Divsion">Divsion:</label-->
+			 <!--input type="Alphabets" id="Alphabets" name="Alphabets" required 7-->
+		</div>
+		
+		<!-- Aadhar card -->
+		<div class="form-group">
+		<label for="Aadhar card Number">Aadhar card Number:</label>
+			 <input type="Number" id="Number" name="Number" required>
+		</div>
+		<!-- ration card -->
+		<div class="form-group">
+		<label for="Ration card Number">Ration card Number:</label>
+			 <input type="Number" id="Number" name="Number" required>
+		</div>
+		
+
+        <!-- Email Address -->
+        <div class="form-group">
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <!-- Date of Birth -->
+        <div class="form-group">
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+        </div>
+
+        <!-- Gender -->
+        <div class="form-group">
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+
+        <!-- ID Proof Upload -->
+        <div class="form-group">
+            <label for="idProof">Upload ID Proof (PDF, JPEG, PNG):</label>
+            <input type="file" id="idProof" name="idProof" accept=".jpg, .jpeg, .png, .pdf" required>
+        </div>
+
+        <!-- Photo Upload -->
+        <div class="form-group">
+            <label for="photo">Upload your Photo:</label>
+            <input type="file" id="photo" name="photo" accept=".jpg, .jpeg, .png" required>
+        </div>
+
+        <!-- Submit Button -->
+        <input type="submit" value="Submit KYC">
+    </form>
+</div>
+
+<div class="footer">
+    <p>C.K.Prajapati Vidhyalay:-2; 2024 e-KYC Platform | All rights reserved</p>
+</div>
+
+</body>
+</html>
